@@ -257,6 +257,25 @@ time estimate...
 
 \MarginPar{Alice and Mike will work on this}
 
+Using the $6$cm zone${}^{-1}$ resolution of~\cite{xrb3} over the entire neutron
+star ocean would require roughly $10^7$ times more computational zones than the
+study of~\cite{xrb3}. The 3d simulation of~\cite{xrb3} also covered only $0.04$
+seconds of time, whereas the rise, peak and decay of the burst requires tens of
+seconds. A naive Moore's Law extrapolation suggests roughly $50$ years of
+computational speed improvements are needed for a global simulation of the
+entire ocean using the techniques of~\cite{xrb3}.
+
+This estimate is both too pessimistic and not pessimistic enough. It is too
+pessimistic as~\cite{xrb3} concentrated on the convective behaviour and so the
+use of mesh refinement would not cut resolution requirements. In a true global
+simulation there would be many regions of the ocean where the resolution
+requirements could be considerably relaxed and mesh refinement would cut the
+costs by orders of magnitude. However, the study of~\cite{xrb3} was already
+accelerated by using the Low Mach approximation, which has limited physical
+applicability on global scales. To properly capture the effects of rotation and
+large scale lateral motions other physical models will be needed. If the
+compressible model is required then the additional cost could easily be orders
+of magnitude, wiping out the gains from mesh refinement.
 
 \section{Algorithmic Developments}
 
